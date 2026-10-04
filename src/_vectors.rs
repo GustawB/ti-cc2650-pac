@@ -4,13 +4,14 @@ unsafe extern "C" {
     fn RFC_PE0();
     fn AON_RTC();
     fn UART0();
-    fn UART1();
+    fn AUX_SWEV0();
     fn SSI0();
     fn SSI1();
     fn RFC_PE1();
     fn RFC();
     fn RFC_CA();
     fn I2S();
+    fn AUX_SWEV1();
     fn WDT();
     fn GPT0A();
     fn GPT0B();
@@ -45,14 +46,18 @@ pub static __INTERRUPTS: [Vector; 34] = [
     Vector { _reserved: 0 },
     Vector { _handler: AON_RTC },
     Vector { _handler: UART0 },
-    Vector { _handler: UART1 },
+    Vector {
+        _handler: AUX_SWEV0,
+    },
     Vector { _handler: SSI0 },
     Vector { _handler: SSI1 },
     Vector { _handler: RFC_PE1 },
     Vector { _handler: RFC },
     Vector { _handler: RFC_CA },
     Vector { _handler: I2S },
-    Vector { _reserved: 0 },
+    Vector {
+        _handler: AUX_SWEV1,
+    },
     Vector { _handler: WDT },
     Vector { _handler: GPT0A },
     Vector { _handler: GPT0B },

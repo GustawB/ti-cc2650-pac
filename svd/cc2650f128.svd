@@ -50,8 +50,8 @@
         <value>5</value>
       </interrupt>
       <interrupt>
-        <name>UART1</name>
-        <description>UART1</description>
+        <name>AUX_SWEV0</name>
+        <description>AUX software event 0</description>
         <value>6</value>
       </interrupt>
       <interrupt>
@@ -83,6 +83,11 @@
         <name>I2S</name>
         <description>I2S</description>
         <value>12</value>
+      </interrupt>
+      <interrupt>
+        <name>AUX_SWEV1</name>
+        <description>AUX software event 1</description>
+        <value>13</value>
       </interrupt>
       <interrupt>
         <name>WDT</name>
@@ -75337,13 +75342,14 @@ A read of this register returns the following values:
   <interrupt id="RFC_PE0" value="18" description="RF Core and packet engine 1"/>
   <interrupt id="AON_RTC" value="20" description="AON RTC"/>
   <interrupt id="UART0" value="21" description="UART0"/>
-  <interrupt id="UART1" value="22" description="UART1"/>
+  <interrupt id="AUX_SWEV0" value="22" description="AUX Software Event 0"/>
   <interrupt id="SSI0" value="23" description="SSI0"/>
   <interrupt id="SSI1" value="24" description="SSI1"/>
   <interrupt id="RFC_PE1" value="25" description="RF Core and packet engine 2"/>
   <interrupt id="RFC" value="26" description="RF Core hardware"/>
   <interrupt id="RFC_CA" value="27" description="RF command acknowledge"/>
   <interrupt id="I2S" value="28" description="I2S"/>
+  <interrupt id="AUX_SWEV1" value="22" description="AUX Software Event 1"/>
   <interrupt id="WDT" value="30" description="Watchdog timer"/>
   <interrupt id="GPT0A" value="31" description="GPTimer 0A"/>
   <interrupt id="GPT0B" value="32" description="GPTimer 0B"/>

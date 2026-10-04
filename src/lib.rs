@@ -16,8 +16,8 @@ pub enum Interrupt {
     AON_RTC = 4,
     #[doc = "5 - UART0"]
     UART0 = 5,
-    #[doc = "6 - UART1"]
-    UART1 = 6,
+    #[doc = "6 - AUX software event 0"]
+    AUX_SWEV0 = 6,
     #[doc = "7 - SSI0"]
     SSI0 = 7,
     #[doc = "8 - SSI1"]
@@ -30,6 +30,8 @@ pub enum Interrupt {
     RFC_CA = 11,
     #[doc = "12 - I2S"]
     I2S = 12,
+    #[doc = "13 - AUX software event 1"]
+    AUX_SWEV1 = 13,
     #[doc = "14 - Watchdog timer"]
     WDT = 14,
     #[doc = "15 - GPTimer 0A"]
